@@ -6,5 +6,6 @@
 I originally completed the course in July 2020, but I am speedrunning the course again to refresh my memory.
 
 ## Projects
-1. **Project 1:** [WeSplit](https://www.hackingwithswift.com/100/swiftui/16), Day 16 to Day 18.
-2. **Project 2:** [Guess the Flag](https://www.hackingwithswift.com/100/swiftui/20), Day 20 to Day 22.
+1. Day 16-18: [WeSplit](https://www.hackingwithswift.com/100/swiftui/16).
+2. Day 19: [Convertence](https://www.hackingwithswift.com/100/swiftui/19).
+3. Day 20-22: [Guess the Flag](https://www.hackingwithswift.com/100/swiftui/20).
