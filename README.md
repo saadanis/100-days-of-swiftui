@@ -10,3 +10,5 @@ I originally completed the course in July 2020, but I am speedrunning the course
 2. Day 19: [Convertence](https://www.hackingwithswift.com/100/swiftui/19).
 3. Day 20-22: [GuessTheFlag](https://www.hackingwithswift.com/100/swiftui/20).
 4. Day 25: [RockPaperScissors](https://www.hackingwithswift.com/100/swiftui/25).
+5. Day 26-28: [BettterRest](https://www.hackingwithswift.com/100/swiftui/26).
+6. Day 29-31: [WordScramble](https://www.hackingwithswift.com/100/swiftui/29).
