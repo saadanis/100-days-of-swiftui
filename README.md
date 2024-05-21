@@ -12,3 +12,4 @@ I originally completed the course in July 2020, but I am speedrunning the course
 4. Day 25: [RockPaperScissors](https://www.hackingwithswift.com/100/swiftui/25).
 5. Day 26-28: [BettterRest](https://www.hackingwithswift.com/100/swiftui/26).
 6. Day 29-31: [WordScramble](https://www.hackingwithswift.com/100/swiftui/29).
+7. Day 32-34: [Animations](https://www.hackingwithswift.com/100/swiftui/32).
