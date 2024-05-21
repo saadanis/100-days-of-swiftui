@@ -25,6 +25,9 @@ struct ContentView: View {
     @State private var currentQuestion = 1
     private let totalQuestions = 8
     
+    @State private var selectedFlag = -1
+    @State private var animationAmount = 0.0
+    
     var body: some View {
         ZStack {
             RadialGradient(stops: [
@@ -50,11 +53,20 @@ struct ContentView: View {
                     
                     ForEach(0..<3) { number in
                         Button {
-                            flagTapped(number)
+                                flagTapped(number)
                         } label: {
                             Image(countries[number])
                                 .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                 .shadow(radius: 5)
+                                .rotation3DEffect(
+                                    .degrees(
+                                        number == selectedFlag ? 360 : 0
+                                    ), axis: (x: 0, y: 1, z: 0)
+                                )
+                                .animation(.default, value: selectedFlag)
+                                .opacity(selectedFlag == -1 || number == selectedFlag ? 1 : 0.5)
+                                .animation(.bouncy, value: selectedFlag)
+                                .saturation(selectedFlag == -1 || number == selectedFlag ? 1 : 0.2)
                         }
                     }
                 }
@@ -81,6 +93,9 @@ struct ContentView: View {
     }
     
     func flagTapped(_ number: Int) {
+        
+        selectedFlag = number
+        
         if number == correctAnswer {
             scoreTitle = "Correct"
             currentScore += 10
@@ -94,6 +109,7 @@ struct ContentView: View {
     }
     
     func askQuestion() {
+        selectedFlag = -1
         if currentQuestion == 8 {
             showingGameOver = true
         } else {
@@ -108,6 +124,7 @@ struct ContentView: View {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
         currentScore = 0
+        selectedFlag = -1
     }
 }
 
